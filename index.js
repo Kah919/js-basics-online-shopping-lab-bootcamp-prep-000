@@ -31,8 +31,9 @@ function viewCart() {
         incart.push(".")
       }
     }
-  }
-}
+  } // end of if statement
+  return `In your cart, you have ${inCart}`
+} // end of viewCart()
 
 function total() {
   // write your code here
