@@ -30,7 +30,7 @@ function viewCart() {
       } else {
         incart.push(".")
       }
-    }
+    } // end of for loop
   } // end of if statement
   return `In your cart, you have ${inCart}`
 } // end of viewCart()
