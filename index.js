@@ -22,7 +22,16 @@ function viewCart() {
   var inCart = []
   if(!cart.length) {
     return "Your shopping cart is empty."
-  } 
+  } else {
+    for(var i = 0; i < cart.length; i++) {
+      inCart.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
+      if(i < cart.length) {
+        incart.push(", ");
+      } else {
+        incart.push(".")
+      }
+    }
+  }
 }
 
 function total() {
