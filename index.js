@@ -24,11 +24,14 @@ function viewCart() {
     return "Your shopping cart is empty."
   } else {
     for(var i = 0; i < cart.length; i++) {
-      inCart.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
-      console.log(inCart);
+      if(i === cart.length - 1) {
+        inCart.push(` and ${cart[i].itemName} at $${cart[i].itemPrice}`)
+      } else {
+        inCart.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
+      }
     } // end of for loop
   } // end of if statement
-  return `In your cart, you have ${inCart}.`
+  return `In your cart, you have${inCart}.`
 } // end of viewCart()
 
 function total() {
