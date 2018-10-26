@@ -22,12 +22,7 @@ function viewCart() {
   var inCart = []
   if(!cart.length) {
     return "Your shopping cart is empty."
-  } else {
-    for(var i = 0; i < cart.length; i++) {
-      inCart.push(`${cart.itemName[i]} at $${cart.itemPrice[i]}`)
-    }
-    return `In your cart, you have ${inCart}`
-  }
+  } 
 }
 
 function total() {
