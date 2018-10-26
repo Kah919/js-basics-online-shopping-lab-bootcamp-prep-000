@@ -25,14 +25,10 @@ function viewCart() {
   } else {
     for(var i = 0; i < cart.length; i++) {
       inCart.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
-      if(i < cart.length) {
-        incart.push(", ");
-      } else {
-        incart.push(".")
-      }
+      console.log(inCart);
     } // end of for loop
   } // end of if statement
-  return `In your cart, you have ${inCart}`
+  return `In your cart, you have ${inCart}.`
 } // end of viewCart()
 
 function total() {
